@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deimantinis Gręžimas: Betono Skylės</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a more modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-blue-50 text-gray-800; /* Šviesiai mėlynas fonas ir tamsesnis tekstas */
+        }
+        /* Specific styles for rounded elements */
+        .rounded-3xl {
+            border-radius: 1.5rem; /* Dar labiau suapvalinti kampai */
+        }
+        /* Custom shadow for cards */
+        .shadow-custom-blue {
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
+        }
+        .btn-primary {
+            @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header section -->
+    <header class="bg-gradient-to-br from-blue-700 to-blue-900 text-white p-6 shadow-2xl rounded-b-3xl">
+        <div class="container mx-auto text-center py-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight leading-tight">Deimantinis Gręžimas</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">Tikslios Skylės Betone - Švaru ir Efektyvu</p>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main class="flex-grow container mx-auto px-4 py-12">
+
+        <!-- Illustration Section was removed due to persistent display issues -->
+        <section class="bg-white p-8 rounded-3xl shadow-custom-blue mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-5">Apie Deimantinį Gręžimą ir Horizontalų Gręžimą</h2>
+            <p class="mb-4 leading-relaxed">
+                Deimantinis gręžimas yra pažangus ir efektyvus būdas atlikti tikslias bei švarias skyles įvairiuose kietuose paviršiuose, ypač betone. Šis metodas leidžia išvengti didelių vibracijų ir dulkių, o tai ypač svarbu dirbant jautriose aplinkose, tokiose kaip gyvenamieji ar komerciniai pastatai. Deimantinis gręžimas užtikrina, kad skylės būtų išgręžtos be konstrukcijų pažeidimo ir atitiktų aukščiausius kokybės standartus.
+            </p>
+            <p class="leading-relaxed">
+                Ypatingą dėmesį skiriame **horizontaliam gręžimui**, kuris yra būtinas įrengiant įvairias inžinerines sistemas sienose, pavyzdžiui, vamzdynus, elektros instaliaciją ar vėdinimo kanalus. Mūsų komanda naudoja tik moderniausiomis deimantinio gręžimo technologijomis ir griežtai laikosi visų saugumo standartų, garantuodama greitą, kokybišką ir itin švarų darbų atlikimą, ypač taikant sausąjį gręžimą, kuris minimizuoja vandens naudojimą ir dulkių susidarymą.
+            </p>
+        </section>
+
+        <section class="bg-white p-8 rounded-3xl shadow-custom-blue mb-10">
+            <h2 class="text-3xl font-bold text-blue-800 mb-5">Mūsų Paslaugos</h2>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-3">
+                <li><strong class="text-blue-700">Betono Gręžimas:</strong> Atliekame įvairaus skersmens skylių gręžimą betone, armuotame betone, mūre, su maksimaliu tikslumu.</li>
+                <li><strong class="text-blue-700">Inžinerinių Angų Gręžimas:</strong> Gręžiame preciziškas angas ventiliacijos, vandentiekio, elektros instaliacijos ir kitoms sistemoms.</li>
+                <li><strong class="text-blue-700">Sienų ir Lubų Gręžimas:</strong> Vykdome gręžimo darbus vertikaliuose ir horizontaliuose paviršiuose, užtikrindami stabilumą ir saugumą.</li>
+                <li><strong class="text-blue-700">Gręžimas Be Dulkių ir Vibracijos:</strong> Naudojame pažangias technologijas, kurios minimizuoja dulkių ir vibracijos poveikį, užtikrinant švarą ir komfortą darbo vietoje.</li>
+            </ul>
+        </section>
+
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8 rounded-3xl shadow-custom-blue text-center">
+            <h2 class="text-3xl font-bold mb-4">Susisiekite su Mumis Dabar!</h2>
+            <p class="text-xl leading-relaxed mb-6 opacity-90">
+                Gaukite nemokamą konsultaciją ir pasiūlymą savo projektui. Esame pasiruošę atsakyti į visus jūsų klausimus!
+            </p>
+            <a href="#" id="contactButton" class="btn-primary" onclick="showPhoneNumber()">Gaukite Pasiūlymą</a>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-900 text-white p-6 mt-12 rounded-t-3xl">
+        <div class="container mx-auto text-center py-4">
+            <p>&copy; 2025 Deimantinio Gręžimo Paslaugos. Visos teisės saugomos.</p>
+            <p class="text-sm mt-2 opacity-75">Sukurta su profesionalumu ir precizika.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript funkcija, kuri parodys telefono numerį paspaudus mygtuką
+        function showPhoneNumber() {
+            const button = document.getElementById('contactButton');
+            if (button) {
+                // Pakeičiame mygtuko tekstą į telefono numerį
+                button.textContent = '+370 683 58283'; // Pakeiskite į savo realų telefono numerį
+                // Pasirenkama: galite padaryti telefono numerį paspaudžiamu
+                button.href = 'tel:+37068358283';
+                // Pašaliname onclick įvykį, kad numeris nepasikeistų dar kartą paspaudus
+                button.onclick = null;
+            }
+        }
+    </script>
+</body>
+</html>
